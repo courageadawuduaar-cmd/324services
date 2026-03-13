@@ -1,0 +1,229 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- HERO SECTION -->
+
+<section class="hero animated-hero">
+<div class="container text-center">
+
+<h1 class="display-4 fw-bold">Digital Solutions for Elections & Voting</h1>
+
+<p class="lead">
+Secure platforms for schools, institutions and personality awards.
+</p>
+
+<a href="{% url 'services' %}" class="btn btn-primary btn-lg mt-3">
+Explore Our Platforms
+</a>
+
+</div>
+</section>
+
+<section class="ecosystem-section py-5">
+<!-- PLATFORMS ECOSYSTEM -->
+
+<div class="container text-center">
+
+<h2 class="mb-5">Our Platforms Ecosystem</h2>
+
+<p class="lead mb-5">
+3-24 Services builds digital platforms that power elections and 
+voting.
+</p>
+
+<!-- Parent Company -->
+
+<div class="mb-5">
+
+<h3 class="fw-bold text-primary">3-24 Services</h3>
+
+<p>Technology & Digital Solutions Company</p>
+
+</div>
+
+<!-- Ecosystem Diagram -->
+
+<div class="row justify-content-center g-4">
+
+<!-- EduVoteGH -->
+
+<div class="col-md-3">
+
+<div class="card shadow h-100 text-center p-3">
+
+<i class="bi bi-check2-square display-4 text-primary"></i>
+
+<h5 class="mt-3">EduVoteGH</h5>
+
+<p>
+Digital election management platform
+for schools and institutions.
+</p>
+
+<a href="https://eduvotegh.onrender.com" class="btn btn-outline-primary btn-sm">
+Visit Platform
+</a>
+
+</div>
+
+</div>
+
+<!-- EduVote -->
+
+<div class="col-md-3">
+
+<div class="card shadow h-100 text-center p-3">
+
+<i class="bi bi-trophy display-4 text-warning"></i>
+
+<h5 class="mt-3">EduVote</h5>
+
+<p>
+Online voting system for awards,
+contests and event voting.
+</p>
+
+<a href="https://eduvote-pers-dzno.onrender.com" class="btn btn-outline-primary btn-sm">
+Visit Platform
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- HOW EDVOTEGH WORKS -->
+
+<div class="container mt-5">
+
+<h2 class="text-center mb-5">How EduVoteGH Works</h2>
+
+<div class="row g-4 text-center">
+
+<div class="col-md-4">
+<div class="card bg-primary text-white h-100 p-3">
+<i class="bi bi-building display-5"></i>
+<h5 class="mt-3">Institution Provides Details</h5>
+<p>
+Schools submit election positions, candidates and voter list.
+</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card bg-success text-white h-100 p-3">
+<i class="bi bi-gear display-5"></i>
+<h5 class="mt-3">Election Setup</h5>
+<p>
+We configure the election and prepare the system.
+</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card bg-warning text-dark h-100 p-3">
+<i class="bi bi-upload display-5"></i>
+<h5 class="mt-3">Upload Voters</h5>
+<p>
+The voter list is uploaded into the secure system.
+</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card bg-info text-white h-100 p-3">
+<i class="bi bi-key display-5"></i>
+<h5 class="mt-3">Generate Passwords</h5>
+<p>
+Each voter receives a secure login password.
+</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card bg-dark text-white h-100 p-3">
+<i class="bi bi-shield-check display-5"></i>
+<h5 class="mt-3">Vote Securely</h5>
+<p>
+Students log in and cast their votes safely.
+</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card bg-danger text-white h-100 p-3">
+<i class="bi bi-bar-chart display-5"></i>
+<h5 class="mt-3">Results Instantly</h5>
+<p>
+Results are calculated automatically and exported as PDF.
+</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<!-- TRUST SECTION -->
+
+<div class="container mt-5 text-center">
+
+<h2 class="mb-4">Trusted Digital Voting Platform</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<h3 class="text-primary">100% Secure</h3>
+<p>
+All votes are securely stored and protected
+from manipulation.
+</p>
+</div>
+
+<div class="col-md-4">
+<h3 class="text-primary">Instant Results</h3>
+<p>
+Election results are automatically calculated
+after voting ends.
+</p>
+</div>
+
+<div class="col-md-4">
+<h3 class="text-primary">Transparent Elections</h3>
+<p>
+Institutions can run elections with full
+transparency and accountability.
+</p>
+</div>
+
+</div>
+</div>
+
+<!-- CALL TO ACTION -->
+
+<section class="cta-section text-white text-center p-5 mt-5">
+
+<div class="container">
+
+<h2>Ready to Run Your School Election Online?</h2>
+
+<p class="lead">
+We help schools conduct secure and transparent elections.
+</p>
+
+<a href="{% url 'contact' %}" class="btn btn-light btn-lg mt-3">
+Contact Us
+</a>
+
+</div>
+
+</section>
+
+{% endblock %}

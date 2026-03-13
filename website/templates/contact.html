@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- PAGE HEADER -->
+
+<section class="page-header contact-header text-white p-5">
+<div class="container text-center">
+
+<h1 class="display-4 fw-bold">Contact 3-24 Services</h1>
+
+<p class="lead">
+We would love to work with your institution or organization.
+</p>
+
+</div>
+</section>
+
+<!-- CONTACT SECTION -->
+
+<div class="container mt-5">
+
+<div class="row g-4">
+
+<!-- CONTACT DETAILS -->
+
+<div class="col-md-6">
+
+<div class="card shadow p-4 h-100">
+
+<h3 class="mb-3">Get in Touch</h3>
+
+<p>
+If your school, institution, or organization would like to
+use any of our platforms such as <strong>EduVoteGH</strong> or
+<strong>EduVote</strong>, please contact us.
+</p>
+
+<hr>
+
+<p><strong>Company:</strong> 3-24 Services</p>
+
+<p><strong>Location:</strong> Accra, Ghana</p>
+
+<p><strong>Phone:</strong> +233 54 513 3351</p>
+
+<p><strong>Email:</strong> info@324services.com</p>
+
+<p>
+<strong>WhatsApp:</strong>
+<a href="https://wa.me/233535542203" target="_blank">
+Chat with us on WhatsApp
+</a>
+</p>
+
+</div>
+
+</div>
+
+<!-- CONTACT FORM -->
+
+<div class="col-md-6">
+
+<div class="card shadow p-4 h-100">
+
+<h3 class="mb-3">Send Us a Message</h3>
+
+<p class="text-muted">
+Fill the form below and our team will get back to you shortly.
+</p>
+
+<form method="POST">
+
+{% csrf_token %}
+
+<div class="mb-3">
+<label class="form-label">Full Name</label>
+<input type="text" name="name" class="form-control" placeholder="Enter your full name" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Email Address</label>
+<input type="email" name="email" class="form-control" placeholder="Enter your email address" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Message</label>
+<textarea name="message" class="form-control" rows="5" placeholder="Type your message here..." required></textarea>
+</div>
+
+<button type="submit" class="btn btn-primary">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CALL TO ACTION -->
+
+<section class="bg-light text-center p-5 mt-5">
+
+<div class="container">
+
+<h2 class="mb-3">Need a Digital Voting Platform?</h2>
+
+<p class="lead">
+3-24 Services provides secure election platforms for schools,
+institutions and award voting systems.
+</p>
+
+<a href="{% url 'services' %}" class="btn btn-primary btn-lg">
+Explore Our Platforms
+</a>
+
+</div>
+
+</section>
+
+{% endblock %}
